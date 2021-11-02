@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import "./assets/css/reset.css";
+
+/******************
+       FONT-SIZE
+*******************/
+
+.fs-45 {
+    font-size: 45px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fs-32 {
+    font-size: 32px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs-24 {
+    font-size: 24px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fs-20 {
+    font-size: 20px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.fs-18 {
+    font-size: 18px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-8 {
+    font-size: 8px !important;
+}
+
+/******************
+       FONT-WEIGTH
+*******************/
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/******************
+    COLOR
+*******************/
+
+.c-blue {
+    color: #78CDC9 !important;
+}
+
+.c-purple {
+    color: #592BBA !important;
+}
+
+.c-purple-secondary {
+    color: #827396 !important;
+}
+
+.c-grey {
+    color: #c2c2c2 !important;
+}
+
+.c-white {
+    color: #ffffff !important;
+}
+
+.c-white-secondary {
+    color: #f2f2f2 !important;
+}
+
+.c-white-tertiary {
+    color: #f9f9f9 !important;
 }
