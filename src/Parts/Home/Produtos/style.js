@@ -57,8 +57,8 @@ export const Left = styled.div`
 export const Right = styled.div`
     flex: 1;
     padding: 20px;
-    background: #f9f9f9;
     margin-left: 20px;
+    align-self: flex-start;
 `;
 
 export const Menu = styled.div`
@@ -120,3 +120,30 @@ export const ListTitle = styled.span`
     padding: 20px 0;
     font-size: 18px;
 `;
+
+export const Select = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+`;
+
+export const SelectOpitions = styled.div`
+    padding: 45px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 2px solid #592bba;
+    border-radius: 12px;
+
+    &.active{
+        background: #592bba;
+        border: 0;
+    }
+`;
+
+
+export const SelectTitle = styled.div`
+`;
+
+
+

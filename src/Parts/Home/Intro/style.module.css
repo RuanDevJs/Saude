@@ -11,10 +11,6 @@
     align-items: center;
 }
 
-.intro_container > div {
-    max-width: 50%;
-}
-
 .intro_container > div h1{
     line-height: 1.3em;
 }

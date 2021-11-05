@@ -8,6 +8,9 @@ import {
     Option,
     Produtos,
     Right,
+    Select,
+    SelectOpitions,
+    SelectTitle,
     Table,
     Title,
 } from "./style";
@@ -60,7 +63,7 @@ export default function Produto() {
         const menu = document.querySelectorAll("[data-menu]");
         const tables = document.querySelectorAll("[data-table]");
         tables[0].classList.add("active");
-        menu[0].classList.add("active_menu")
+        menu[0].classList.add("active_menu");
 
         function ActiveTable(index) {
             tables.forEach((el) => el.classList.remove("active"));
@@ -80,9 +83,7 @@ export default function Produto() {
 
     return (
         <Produtos>
-            <Title className="fw-900 c-purple">
-                Produtos
-            </Title>
+            <Title className="fw-900 c-purple">Produtos</Title>
             <Container>
                 <Left>
                     <Menu>
@@ -128,7 +129,16 @@ export default function Produto() {
                         <Button>Assinar Já</Button>
                     </Table>
                 </Left>
-                <Right>a</Right>
+                <Right>
+                    <Select>
+                        <SelectOpitions className="active">
+                            <SelectTitle>Mensal</SelectTitle>
+                        </SelectOpitions>
+                        <SelectOpitions>
+                            <SelectTitle>Anual</SelectTitle>
+                        </SelectOpitions>
+                    </Select>
+                </Right>
             </Container>
         </Produtos>
     );
