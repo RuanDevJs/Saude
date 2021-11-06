@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.header`
     padding: 30px 60px;
@@ -40,11 +41,12 @@ export const RightContainer = styled.div`
     align-items: center;
 `;
 
-export const SignIn = styled.a`
+export const SignIn = styled(Link)`
+    display: block;
     margin-right: 34px;
 `;
 
-export const Button = styled.a`
+export const Button = styled(Link)`
     border: 3px solid #592BBA;
     width: 174px;
     padding: 14px 23px;

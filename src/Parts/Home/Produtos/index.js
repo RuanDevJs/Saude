@@ -62,15 +62,20 @@ export default function Produto() {
     useEffect(() => {
         const menu = document.querySelectorAll("[data-menu]");
         const tables = document.querySelectorAll("[data-table]");
+        const options = document.querySelectorAll("[data-option]");
+
         tables[0].classList.add("active");
         menu[0].classList.add("active_menu");
+        options[0].classList.add("active_option");
 
         function ActiveTable(index) {
             tables.forEach((el) => el.classList.remove("active"));
             menu.forEach((el) => el.classList.remove("active_menu"));
+            options.forEach((el) => el.classList.remove("active_option"));
 
             tables[index].classList.add("active");
             menu[index].classList.add("active_menu");
+            options[index].classList.add("active_option");
         }
 
         menu.forEach((el, index) => {
@@ -87,10 +92,10 @@ export default function Produto() {
             <Container>
                 <Left>
                     <Menu>
-                        <Option className="fw-700" left data-menu>
+                        <Option className="fw-700" left data-option>
                             Mensal
                         </Option>
-                        <Option className="fw-900" right data-menu>
+                        <Option className="fw-900" right data-option>
                             Anual
                         </Option>
                     </Menu>
@@ -131,13 +136,20 @@ export default function Produto() {
                 </Left>
                 <Right>
                     <Select>
-                        <SelectOpitions className="active">
+                        <SelectOpitions data-menu>
+                            <CheckCircle htmlColor="#592bba" />
                             <SelectTitle>Mensal</SelectTitle>
                         </SelectOpitions>
-                        <SelectOpitions>
+                        <SelectOpitions data-menu>
+                            <CheckCircle htmlColor="#592bba" />
                             <SelectTitle>Anual</SelectTitle>
                         </SelectOpitions>
                     </Select>
+                    <Button>Assinar</Button>
+                    <span className="span">
+                        Não encontrou o ideal pra você ? <br/>Entre em contato com: <br/><br/>
+                        contato.salutem@hotmail.com
+                    </span>
                 </Right>
             </Container>
         </Produtos>

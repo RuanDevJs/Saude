@@ -1,13 +1,19 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import "./App.css";
 import Routes from "./Routes";
+
+import { UserProvider } from "./Contexts/User";
+
+import "./App.css";
+
 
 function App() {
     return (
-        <BrowserRouter>
-            <Routes />
-        </BrowserRouter>
+        <UserProvider>
+            <BrowserRouter>
+                <Routes />
+            </BrowserRouter>
+        </UserProvider>
     );
 }
 

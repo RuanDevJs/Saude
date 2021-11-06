@@ -48,7 +48,7 @@ export default function Team() {
             <Wrap isReverse>
                 <Image src={Cleiton} isReverse/>
                 <TeamContent>
-                    <Name className="fw-900 c-purple">Cleiton</Name>
+                    <Name className="fw-900 c-purple">Guilherme</Name>
                     <Profession className="fw-900 c-blue">Desenvolvedor</Profession>
                     <Description className="fw-400 c-grey">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -69,7 +69,7 @@ export default function Team() {
             <Wrap>
                 <Image src={Ace} />
                 <TeamContent>
-                    <Name className="fw-900 c-purple">Ace</Name>
+                    <Name className="fw-900 c-purple">Thiago</Name>
                     <Profession className="fw-900 c-blue">CEO</Profession>
                     <Description className="fw-400 c-grey">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -90,7 +90,7 @@ export default function Team() {
             <Wrap isReverse>
                 <Image src={Guts} isReverse/>
                 <TeamContent>
-                    <Name className="fw-900 c-purple">Guts</Name>
+                    <Name className="fw-900 c-purple">Lucas</Name>
                     <Profession className="fw-900 c-blue">CEO</Profession>
                     <Description className="fw-400 c-grey">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

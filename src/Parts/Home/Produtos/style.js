@@ -56,9 +56,24 @@ export const Left = styled.div`
 
 export const Right = styled.div`
     flex: 1;
-    padding: 20px;
     margin-left: 20px;
     align-self: flex-start;
+    a{
+        margin: 0 auto;
+        background: white;
+        color: #592BBA;
+        border: 2px solid #592BBA;
+    }
+
+    .span {
+        display: block;
+        margin-top: 50px;
+        line-height: 1.3em;
+        font-weight: 300;
+        font-size: 15px;
+        color: #c2c2c2;
+        letter-spacing: 1px;
+    }
 `;
 
 export const Menu = styled.div`
@@ -85,7 +100,7 @@ export const Option = styled.h2`
     color: #c2c2c2;
     cursor: pointer;
 
-    &.active_menu{
+    &.active_option{
         background: #592BBA !important;
         color: #ffffff;
         transition: 0.5s ease-out;
@@ -119,6 +134,8 @@ export const ListTitle = styled.span`
     display: block;
     padding: 20px 0;
     font-size: 18px;
+    padding: 6px;
+    line-height: 1.5em;
 `;
 
 export const Select = styled.div`
@@ -126,6 +143,7 @@ export const Select = styled.div`
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    aling-items: fles-start;
 `;
 
 export const SelectOpitions = styled.div`
@@ -134,15 +152,30 @@ export const SelectOpitions = styled.div`
     background: #fff;
     border: 2px solid #592bba;
     border-radius: 12px;
+    color: #592bba;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor pointer;
+    transition: 0.2s ease-out;
 
-    &.active{
+    &.active_menu{
+        transition: 0.2s ease-in;
         background: #592bba;
         border: 0;
+        color: #fff !important;
+
+        svg {
+            color: white;
+        }
     }
 `;
 
 
-export const SelectTitle = styled.div`
+export const SelectTitle = styled.span`
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 5px;
 `;
 
 

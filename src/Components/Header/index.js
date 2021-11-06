@@ -1,5 +1,8 @@
 import React from "react";
 import icon from "../../assets/img/icon.svg";
+
+import { Link } from "react-router-dom";
+
 import { Center, HeaderContainer, Left, Menu, Right, SignIn, Wrapper, Button, RightContainer } from "./styles";
 
 export default function Header() {
@@ -7,7 +10,9 @@ export default function Header() {
         <HeaderContainer>
             <Wrapper>
                 <Left>
-                    <img src={icon} alt="icon-saude"/>
+                    <Link to="/">
+                        <img src={icon} alt="icon-saude"/>
+                    </Link>
                 </Left>
                 <Center>
                     <Menu className="fs-20 c-purple-secondary fw-300" href="#">
@@ -22,8 +27,8 @@ export default function Header() {
                 </Center>
                 <Right>
                     <RightContainer>
-                        <SignIn className="fs-24 fw-500 c-purple" href="#">Login</SignIn>
-                        <Button className="fs-24 fw-500 c-purple" href="#">CRIAR CONTA</Button>
+                        <SignIn className="fs-24 fw-500 c-purple" to="/login">Login</SignIn>
+                        <Button className="fs-24 fw-500 c-purple" to="/cadastro">CRIAR CONTA</Button>
                     </RightContainer>
                 </Right>
             </Wrapper>

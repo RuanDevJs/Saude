@@ -45,6 +45,7 @@ export const Wrap = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 `;
 
 export const Box = styled.div`
@@ -87,7 +88,7 @@ export const BoxContent = styled.span`
 export const BoxCTA = styled.a`
     display: block;
     text-align: center;
-    width: 25%;
+    width: 90px;
     padding: 12px;
     border-radius: 50px;
     margin: 25px 0;
@@ -122,4 +123,3 @@ export const Link = styled.a`
         color: #591bbc !important;
     }
 `;
-
