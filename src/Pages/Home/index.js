@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import HeaderAuth from '../../Components/HeaderAuth';
 
 export default function Home() {
     return (
         <div>
-            Home
+            <HeaderAuth />
         </div>
     )
 }

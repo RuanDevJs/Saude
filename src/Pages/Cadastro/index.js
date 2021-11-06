@@ -1,15 +1,22 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import Header from "../../Components/Header";
 import Lottie from "react-lottie";
 
 import icon from "../../assets/lotties/68312-login.json";
+
 import { Container, Form, Input, Item, Label, Left, Right, Title, Wrap } from "./style";
 import Button from "../../Components/Button";
+
 
 export default function Cadastro() {
     return (
         <section id="cadastro">
+            <Helmet>
+                <title>Saúde | Cadastrar</title>
+                <meta name="description" content="Crie sua conta" />
+            </Helmet>
             <Header />
             <Container>
                 <Left>

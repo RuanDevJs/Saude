@@ -22,6 +22,7 @@ export const Right = styled.div`
     background: #592bba;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+    box-shadow: 6px 6px 16px rgba(0,0,0,16%);
 `;
 
 export const Wrap = styled.div`

@@ -9,7 +9,7 @@ import Login from "./Pages/Login";
 import NotFound from "./Pages/NotFound";
 
 function CustomRoutes({isPrivate, ...props}){
-    let authenticaded = false;
+    let authenticaded = true;
 
     if(isPrivate && !authenticaded){
         return(

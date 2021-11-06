@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 
 import Header from "../../Components/Header";
 import Faq from "../../Parts/Home/Faq";
@@ -11,6 +12,10 @@ import Team from "../../Parts/Home/Team";
 export default function LandingPage() {
     return (
         <>
+             <Helmet>
+                <title>Saúde | Bem Vindo</title>
+                <meta name="description" content="Seja bem vindo" />
+            </Helmet>
             <Header />
             <Intro />
             <Intro2 />
