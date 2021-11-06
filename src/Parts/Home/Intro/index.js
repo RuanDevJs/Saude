@@ -22,6 +22,7 @@ export default function Intro() {
                         animationData: Icon,
                         autoplay: true
                     }}
+                    isClickToPauseDisabled={true}
                 />
             </div>
         </section>
